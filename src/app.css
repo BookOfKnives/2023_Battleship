@@ -1,0 +1,54 @@
+
+
+body {
+  border: 2px rgb(29, 34, 48) solid;
+  margin: 0;
+  background-color: rgb(14, 18, 24);
+}
+
+.level001-container{
+  display: grid;
+  grid-template-columns: 100px 80px 80px;
+  grid-template-rows: 300px 80px 80px;
+  background-color: #2196F3;
+
+}
+
+.level001-menu {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: rgb(145, 170, 240);
+  border-color: rgb(72, 85, 120);
+  border-style: solid solid none solid;
+
+}
+
+.level001-display {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgb(174, 204, 255);
+}
+
+.level001-chatbar {
+  border-color: rgb(72, 85, 120);
+  border-style: none solid solid solid;
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+}
+
+.level001-footer {
+  background-color: rgb(110, 140, 190);
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+}

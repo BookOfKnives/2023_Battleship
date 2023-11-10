@@ -1,0 +1,31 @@
+body, html {
+  
+  border: 2px green solid;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+:root {
+  background-color: rgb(56, 43, 37);
+  border: 2px red solid;
+}
+
+.footer {
+  flex: 0 0 90px;
+  border: 2px blueviolet solid;
+}
+
+.level001-001 {
+  flex: 1 0 auto;
+  border: 2px black solid;
+}
+
+.level001-002 {
+  flex: 1 0 auto;
+  border: 2px orange solid;
+}

@@ -1,0 +1,156 @@
+0711 2023
+2038
+battleships multiplayer spil
+
+jeg har startet 025_battleships_svelte_01 -- og i den lavet moz todo svelte, for at teste npx degit
+
+jeg tror npx er et exe system for npm
+
+Det er for at bruge svelte istedet for vue. Jeg tror svelte er bedre fordi .. det er mindre. 
+
+Jeg kan bedre lide CSS end tailwind. omend talwindd har nogle fede måder a t håndtere bokse på.
+
+jeg bør finde ud af hvordan man brug er css grid eller ... flexbox? til at alave et warcraft 2 lingende interface.
+
+så mit første interface design -- like warcraft2.
+
+Jeg kan lave noigle borders elements, og give dem flex thing -- de skal have IDer, self .-.. hahehha, det er DET som flexbox lø'ser.
+
+jeg følger 
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started
+
+jeg har fundet både 
+https://svelte.dev/tutorial/basics
+
+og 
+https://learn.svelte.dev/tutorial/welcome-to-svelte
+
+men lige nu skal jeg jo lave bokseså jeg åbne et nyt vindue og lave nogle elementer til css, ogsætte css ien flexbox.
+
+jeg læst ei readme'en af det autogenerende ting (025_01 moz) at det er deprekeret. AT kommanden faktisk er npm init vite -> svelte. kan også bruge sveltekit.
+
+fuck jeg lekser at arbejde med det her!
+
+jeg efterlader moz-todo ... reminder, eh. og 025 er aligevel ikke det færisge. jeg laver npm init vite nu.
+
+slettere den gamle 025
+laver ny 025 m init vite
+
+it turns out the basic style of body is alrteady flex
+
+read read ... i lve it
+
+jeg kigger på cssen for at lave flexboses til design
+stub2128
+
+0611 2023
+1551
+har fucked min hø skulder ved tungt løft over pigtråd. oh well! jeg kigger p+å struktur -- border, flex .-..
+havdde glemt at værider i en border: ikke adskilles af komma
+
+Min body har en magrin, jeg tror det er margin: 0 jeg skal sætte for at have en fuldsides app.
+ja, det var det.
+
+jeg hader flexbopx bogen, jeg brugerg grids istedet for. meget bedre!
+
+turns out the flex did NOTHING.
+
+jeg tager grid fra w3school grid intro
+
+prøver at sætte gridcontainer (den der har displasy:grid) til at  være body
+
+det virker til at være at menu-elemenmternes placering på html'en ikke betyder noget forderes organsioant i griddet. praktisk!
+
+jeg havde sat tekst udenfor den div, der skulle holde det. amatørfejl!
+
+jeg skal lave den orientering, altså
+
+0711 2023
+0315
+jeg har læst videre på flexbox. der er noget omvendt ved det ... jeg kan ikke stole på mine intuitioner. Grid-row-column f.eks skal være 1-3, ikke 1-2 --- fordi det sidste tal er det emne som markeringen STOPPER ved -- lidt ligesom en omvendt array indeksering. Forvirrende. Men de hgavde sikkert en god grund til at gøre det som de gjorde det.
+
+Like everything else its confusing.
+
+0417
+now i finally have my basic interface set up. Only toiok me ... 20+ hoours.
+
+0553
+STUB i app svelte
+
+skal lave chatbox.
+
+1425
+jeg skal sætte socket'en igang nu.
+
+Jeg bruger tutorial
+
+https://socket.io/docs/v4/tutorial/introduction
+
+jeg kører npm i socket.io men importen giver stadig knas?
+
+det er nåske fordi jeg mangler at sætte mopdule
+->nej den er allerede module (mærkeligt)
+-> det er måske fordi jeg har importeret den et forkert sted (ikke i src)
+->nej det var ikke derfor
+STUB -- få sockets til at virke
+
+0811 2023
+1627
+Skal sockets 
+prøver at sige npm i sockets.io-client --- kan være
+-- nu giver den ikke længere fejl --- men ... jeg har sådan set ikke teste det med bare socket.io. lad os det.
+
+extremely weird -- jegh ar lavet en ny submappe, bship-socket-server, som jeg har kaldt npm i socket.io på ... og NU vil Server gerne importeres fra Socket.io.
+
+hvad????
+
+og den vil gerne i 025 app, (som den ikke ville før). jeg forstår det ikke. men OK! 
+
+OK, som tidligere: en Express app som server -- og en svelte frontend app.
+
+Så... backend, frontend.
+
+jeg sletter bshipsocket server og laver en ny -- den behæver slet ikke svelte, noget som helst.
+
+lavet et nyt dir, bship-socket-server, cd, npm i express nodemon cors socket.io
+
+kopierer igen fra anders latifs ting (12.svelte sockets)
+
+hvad er det med to porte igen? shiiiiit ...
+
+og hvoradn er det nu man starter den slags servere?
+->havde glemt at sætte "moduletype"
+nu kører den men det er jo "bare" serveren. 
+
+Det er en ret god ide at være på bibliotek.
+Men jeg har brug for en større skærm.
+
+1731
+STUB 
+bship -- get a socket connection from front to backend
+
+0911 2023
+0233
+Jeg har sidddet og hevet mig i håret fordi jeg har brugt Vue tech istedet for Svelte tech .... fuckkkkkk
+
+Svelte køres fra grundfilen med "npm run dev"
+
+app filer (express servere) køres bedre med nodemon app.js
+
+color: 
+grundffarve 29, 34, 48
+pimrær menubar: *5 145 170 240
+rprimær menubar border: *2,5 72,5 85 120
+ 
+display: *6 174, 204, 288 (255)
+
+root: *0,5 (14, 18, 24);
+
+jeg fandt ud af at læave et svg billede i kirta -- det hedder shift-ins (eller dropned menuen ved siden af +-ikonet for nye laag), og så alt pånær dfreehand drawing, og så lag->eksport->som svg
+
+Fedt!
+
+DDet første man kan gøre er at logge ind. Eller lave en konto.
+
+0357
+STUB: app svelte linej 5, lav en login funktion
